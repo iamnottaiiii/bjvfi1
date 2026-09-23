@@ -34,8 +34,8 @@ jobs:
       - name: Commit and push
         run: |
           TAG="${{ github.event.release.tag_name }}"
-          git config user.name "ingest-bot"
-          git config user.email "ingest-bot@users.noreply.github.com"
+          git config user.name "Not Ai"
+          git config user.email "iamnottaiii@gmail.com"
           git add -A
           N=$(git diff --cached --name-only | wc -l)
           if [ "$N" -eq 0 ]; then echo "nothing to ingest"; exit 0; fi
